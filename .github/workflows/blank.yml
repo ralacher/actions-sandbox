@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo ${{ secrets.name }}
+        run: x=${{ secrets.name }}; echo $x
   
   prod:
     runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo ${{ secrets.name }}
+        run: x=${{ secrets.name }}; echo $x
